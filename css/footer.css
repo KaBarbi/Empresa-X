@@ -1,0 +1,26 @@
+.footer {
+  background-color: #ececec;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer .contact-info {
+  text-align: center;
+}
+
+.footer .contact-info b {
+  font-weight: bold;
+}
+
+.footer .contact-info a {
+  text-decoration: none;
+  color: #333;
+}

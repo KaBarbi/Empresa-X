@@ -1,0 +1,63 @@
+.tittle {
+  max-width: 700px;
+  margin: 0px auto;
+}
+
+.container-content {
+  display: flex;
+  align-items: center;
+  max-width: 700px; /* Ajuste conforme necessário */
+  /* margin: 20px auto; */
+  margin: 10px auto 30px;
+  gap: 30px; /* Espaço entre os elementos sem usar padding */
+}
+
+.image-content {
+  width: 50%; /* Define um tamanho fixo para a image-contentm */
+  padding-right: 0; /* Remove padding para melhor controle */
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+}
+
+.content-right {
+  width: 60%; /* Define um tamanho fixo para o conteúdo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #f96944;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.button {
+  display: inline-block;
+  background-color: #faae00;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #e09900; /* Cor um pouco mais escura */
+  transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}
+
+/* Efeito de clique (active) */
+.button:active {
+  transform: scale(0.98); /* Dá um efeito de "pressão" ao clicar */
+}
+
+.description {
+  max-width: 700px;
+  margin: 20px auto;
+}
