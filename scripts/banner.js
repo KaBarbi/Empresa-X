@@ -9,10 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (entry.isIntersecting) {
           let activeSlideId = entry.target.id;
 
-          // Remove 'active' de todos os links
           navLinks.forEach((link) => link.classList.remove("active"));
 
-          // Adiciona 'active' no link correspondente
           const activeNav = document.querySelector(
             `.slider-nav a[href="#${activeSlideId}"]`
           );
