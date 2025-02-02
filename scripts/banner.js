@@ -7,32 +7,34 @@ document.addEventListener("DOMContentLoaded", () => {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          let activeSlideId = entry.target.id;
-
-          navLinks.forEach((link) => link.classList.remove("active"));
-
-          const activeNav = document.querySelector(
-            `.slider-nav a[href="#${activeSlideId}"]`
-          );
-          if (activeNav) {
-            activeNav.classList.add("active");
-          }
+          let activeSlideIndex = [...slides].indexOf(entry.target);
+          updateActiveNav(activeSlideIndex);
         }
       });
     },
     { threshold: 0.75 }
   );
 
+  function updateActiveNav(index) {
+    navLinks.forEach((link) => link.classList.remove("active"));
+    if (navLinks[index]) {
+      navLinks[index].classList.add("active");
+    }
+  }
+
   navLinks.forEach((link, index) => {
     link.addEventListener("click", (event) => {
       event.preventDefault();
-
       const targetSlide = slides[index];
+
       if (targetSlide) {
         sliderContainer.scrollTo({
           left: targetSlide.offsetLeft,
           behavior: "smooth",
         });
+
+        // Força a atualização manual da navegação para correçao do scroll bug
+        updateActiveNav(index);
       }
     });
   });

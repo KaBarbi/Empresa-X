@@ -7,7 +7,7 @@
   width: 100vw;
   max-width: 100%;
   overflow: hidden;
-  padding-bottom: 3rem; /* Adiciona espaço extra para o navbar */
+  padding-bottom: 3rem;
 }
 
 .slider {
@@ -16,11 +16,10 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  -ms-overflow-style: none; /* Oculta scrollbar no IE e Edge */
-  scrollbar-width: none; /* Oculta scrollbar no Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-/* Oculta scrollbar no Chrome, Safari and Opera */
 .slider::-webkit-scrollbar {
   display: none;
 }
@@ -28,7 +27,7 @@
 .slider img {
   flex: 1 0 100vw;
   width: 100vw;
-  height: auto; /* Mantém a proporção original da imagem */
+  height: auto;
   object-fit: cover;
   scroll-snap-align: start;
 }
@@ -47,8 +46,8 @@
   width: 0.75rem;
   height: 0.75rem;
   border-radius: 50%;
-  border: 2px solid #838383; /* Adiciona o contorno */
-  background-color: transparent; /* Remove o fundo */
+  border: 2px solid #838383;
+  background-color: transparent;
   opacity: 0.75;
   transition: opacity ease 250ms, transform ease 250ms, border-color ease 250ms;
 }

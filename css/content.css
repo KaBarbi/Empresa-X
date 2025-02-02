@@ -6,15 +6,14 @@
 .container-content {
   display: flex;
   align-items: center;
-  max-width: 700px; /* Ajuste conforme necessário */
-  /* margin: 20px auto; */
+  max-width: 700px;
   margin: 10px auto 30px;
-  gap: 30px; /* Espaço entre os elementos sem usar padding */
+  gap: 30px;
 }
 
 .image-content {
-  width: 50%; /* Define um tamanho fixo para a image-contentm */
-  padding-right: 0; /* Remove padding para melhor controle */
+  width: 50%;
+  padding-right: 0;
 }
 
 .image-content img {
@@ -23,7 +22,7 @@
 }
 
 .content-right {
-  width: 60%; /* Define um tamanho fixo para o conteúdo */
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,13 +47,12 @@ h1 {
 }
 
 .button:hover {
-  background-color: #e09900; /* Cor um pouco mais escura */
-  transform: scale(1.05); /* Aumenta ligeiramente o botão */
+  background-color: #e09900;
+  transform: scale(1.05);
 }
 
-/* Efeito de clique (active) */
 .button:active {
-  transform: scale(0.98); /* Dá um efeito de "pressão" ao clicar */
+  transform: scale(0.98);
 }
 
 .description {
